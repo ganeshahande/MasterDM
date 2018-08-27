@@ -11,6 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9894D12B-29C6-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VFS.UI.MDM", "UI\VFS.UI.MDM\VFS.UI.MDM.csproj", "{7BC183A3-5335-4F09-9CBD-F8ED02612C62}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{695D4EE1-8F00-4080-8711-C5BC9E611221}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bacpac", "bacpac", "{F04682FD-7BE8-49B6-8527-43746A98C352}"
+	ProjectSection(SolutionItems) = preProject
+		Database\bacpac\_DBMISSION.bacpac = Database\bacpac\_DBMISSION.bacpac
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +39,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C5AD878F-5307-4A9F-8B68-B1CA3310F281} = {F4A0EC86-4B69-458A-8DAD-CCE0329332CD}
 		{7BC183A3-5335-4F09-9CBD-F8ED02612C62} = {9894D12B-29C6-4DF4-BC1F-7D114B94AF10}
+		{F04682FD-7BE8-49B6-8527-43746A98C352} = {695D4EE1-8F00-4080-8711-C5BC9E611221}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D450EC1A-C32F-4D19-818A-ADF251933A7B}

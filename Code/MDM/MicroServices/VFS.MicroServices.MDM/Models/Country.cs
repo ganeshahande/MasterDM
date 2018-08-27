@@ -7,9 +7,9 @@ namespace VFS.MicroServices.MDM.Models
     {
         public Country()
         {
-            CountryOfOperation = new HashSet<CountryOfOperation>();
-            MstcountryLangMap = new HashSet<MstcountryLangMap>();
-            MstcountryMap = new HashSet<MstcountryMap>();
+            //CountryOfOperation = new HashSet<CountryOfOperation>();
+            //MstcountryLangMap = new HashSet<MstcountryLangMap>();
+            //MstcountryMap = new HashSet<MstcountryMap>();
         }
 
         public int Id { get; set; }
@@ -20,8 +20,8 @@ namespace VFS.MicroServices.MDM.Models
         public string DialCode { get; set; }
         public string Nationality { get; set; }
 
-        public ICollection<CountryOfOperation> CountryOfOperation { get; set; }
-        public ICollection<MstcountryLangMap> MstcountryLangMap { get; set; }
-        public ICollection<MstcountryMap> MstcountryMap { get; set; }
+        //public ICollection<CountryOfOperation> CountryOfOperation { get; set; }
+        //public ICollection<MstcountryLangMap> MstcountryLangMap { get; set; }
+        //public ICollection<MstcountryMap> MstcountryMap { get; set; }
     }
 }

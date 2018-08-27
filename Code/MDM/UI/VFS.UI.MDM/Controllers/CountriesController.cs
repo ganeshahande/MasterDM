@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
+using System.Linq;
 using Newtonsoft.Json;
 using VFS.UI.MDM.Models;
+
 namespace VFS.UI.MDM.Controllers
 {
     public class CountriesController : Controller
     {
         CountryAPI _CountryAPI = new CountryAPI();
-        
+
         public async Task<IActionResult> Index()
         {
             List<CountryDTO> dto = new List<CountryDTO>();
@@ -19,23 +21,24 @@ namespace VFS.UI.MDM.Controllers
 
             HttpResponseMessage res = await client.GetAsync("api/Countries");
 
-            //Checking the response is successful or not which is sent using HttpClient  
+            //CHECKING THE RESPONSE IS SUCCESSFUL OR NOT WHICH IS SENT USING HTTPCLIENT  
             if (res.IsSuccessStatusCode)
             {
-                //Storing the response details recieved from web api   
+                //STORING THE RESPONSE DETAILS RECIEVED FROM WEB API   
                 var result = res.Content.ReadAsStringAsync().Result;
 
-                //Deserializing the response recieved from web api and storing into the Employee list  
+                //DESERIALIZING THE RESPONSE RECIEVED FROM WEB API AND STORING INTO THE LIST  
                 dto = JsonConvert.DeserializeObject<List<CountryDTO>>(result);
 
             }
-            //returning the employee list to view  
+            //RETURNING THE LIST TO VIEW  
             return View(dto);
         }
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("Id,Name,Code,Isocode2,Isocode3,DialCode,Nationality")] CountryDTO countryDTO)
@@ -45,7 +48,56 @@ namespace VFS.UI.MDM.Controllers
                 HttpClient client = _CountryAPI.InitializeClient();
 
                 var content = new StringContent(JsonConvert.SerializeObject(countryDTO), Encoding.UTF8, "application/json");
-                HttpResponseMessage res = client.PostAsync("api/PutCountry", content).Result;
+                HttpResponseMessage res = client.PostAsync("api/Countries", content).Result;
+                if (res.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+            }
+            return View(countryDTO);
+        }
+
+        public async Task<IActionResult> Edit(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            List<CountryDTO> dto = new List<CountryDTO>();
+            HttpClient client = _CountryAPI.InitializeClient();
+            HttpResponseMessage res = await client.GetAsync("api/Countries");
+
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                dto = JsonConvert.DeserializeObject<List<CountryDTO>>(result);
+            }
+
+            var country = dto.SingleOrDefault(m => m.Id == id);
+            if (country == null)
+            {
+                return NotFound();
+            }
+
+            return View(country);
+        }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(long id, [Bind("Id,Name,Code,Isocode2,Isocode3,DialCode,Nationality")] CountryDTO countryDTO)
+        {
+            if (id != countryDTO.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                HttpClient client = _CountryAPI.InitializeClient();
+
+                var content = new StringContent(JsonConvert.SerializeObject(countryDTO), Encoding.UTF8, "application/json");
+                HttpResponseMessage res = client.PutAsync("api/Countries", content).Result;
                 if (res.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index");

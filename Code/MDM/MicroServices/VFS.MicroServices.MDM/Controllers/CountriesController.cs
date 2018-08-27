@@ -47,28 +47,30 @@ namespace VFS.MicroServices.MDM.Controllers
         }
 
         // PUT: api/Countries/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCountry([FromRoute] int id, [FromBody] Country country)
+        //[HttpPut("{id}")]
+        [HttpPut]
+        public async Task<IActionResult> PutCountry([FromBody] Country country)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != country.Id)
-            {
-                return BadRequest();
-            }
+            //if (id != country.Id)
+            //{
+            //    return BadRequest();
+            //}
 
             _context.Entry(country).State = EntityState.Modified;
 
             try
             {
                 await _context.SaveChangesAsync();
+                //return Ok("200"); 
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CountryExists(id))
+                if (!CountryExists(country.Id))
                 {
                     return NotFound();
                 }
@@ -77,8 +79,8 @@ namespace VFS.MicroServices.MDM.Controllers
                     throw;
                 }
             }
-
-            return NoContent();
+            return Ok("200");
+            //return NoContent();
         }
 
         // POST: api/Countries
@@ -92,8 +94,7 @@ namespace VFS.MicroServices.MDM.Controllers
 
             _context.Country.Add(country);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetCountry", new { id = country.Id }, country);
+            return Ok("200");            
         }
 
         // DELETE: api/Countries/5

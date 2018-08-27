@@ -80,11 +80,11 @@ namespace VFS.MicroServices.MDM.Models
                     .IsRequired()
                     .HasMaxLength(250);
 
-                entity.HasOne(d => d.Country)
-                    .WithMany(p => p.CountryOfOperation)
-                    .HasForeignKey(d => d.CountryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Country_CountryOpsId");
+                entity.HasOne(d => d.Country);
+                    //.WithMany(p => p.CountryOfOperation)
+                    //.HasForeignKey(d => d.CountryId)
+                    //.OnDelete(DeleteBehavior.ClientSetNull)
+                    //.HasConstraintName("FK_Country_CountryOpsId");
 
                 entity.HasOne(d => d.Mission)
                     .WithMany(p => p.CountryOfOperation)
@@ -198,11 +198,11 @@ namespace VFS.MicroServices.MDM.Models
                     .IsRequired()
                     .HasMaxLength(100);
 
-                entity.HasOne(d => d.Country)
-                    .WithMany(p => p.MstcountryLangMap)
-                    .HasForeignKey(d => d.CountryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Country_MSTCountryLangMap_Country");
+                entity.HasOne(d => d.Country);
+                    //.WithMany(p => p.MstcountryLangMap)
+                    //.HasForeignKey(d => d.CountryId)
+                    //.OnDelete(DeleteBehavior.ClientSetNull)
+                    //.HasConstraintName("FK_Country_MSTCountryLangMap_Country");
 
                 entity.HasOne(d => d.Language)
                     .WithMany(p => p.MstcountryLangMap)
@@ -215,11 +215,11 @@ namespace VFS.MicroServices.MDM.Models
             {
                 entity.ToTable("MSTCountryMap");
 
-                entity.HasOne(d => d.Country)
-                    .WithMany(p => p.MstcountryMap)
-                    .HasForeignKey(d => d.CountryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Country_MSTCountryMap_Country");
+                entity.HasOne(d => d.Country);
+                    //.WithMany(p => p.MstcountryMap)
+                    //.HasForeignKey(d => d.CountryId)
+                    //.OnDelete(DeleteBehavior.ClientSetNull)
+                    //.HasConstraintName("FK_Country_MSTCountryMap_Country");
 
                 entity.HasOne(d => d.CountryOps)
                     .WithMany(p => p.MstcountryMap)

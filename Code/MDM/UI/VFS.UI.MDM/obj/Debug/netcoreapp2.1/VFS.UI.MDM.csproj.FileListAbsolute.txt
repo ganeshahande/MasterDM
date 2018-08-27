@@ -49,6 +49,7 @@ D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Deb
 D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\VFS.UI.MDM.TagHelpers.output.cache
 D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\VFS.UI.MDM.RazorCoreGenerate.cache
 D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Create.g.cshtml.cs
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Edit.g.cshtml.cs
 D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Index.g.cshtml.cs
 D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
