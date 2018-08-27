@@ -1,0 +1,14 @@
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\bin\Debug\netcoreapp2.1\VFS.MicroServices.MDM.deps.json
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\bin\Debug\netcoreapp2.1\VFS.MicroServices.MDM.runtimeconfig.json
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\bin\Debug\netcoreapp2.1\VFS.MicroServices.MDM.runtimeconfig.dev.json
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\bin\Debug\netcoreapp2.1\VFS.MicroServices.MDM.dll
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\bin\Debug\netcoreapp2.1\VFS.MicroServices.MDM.pdb
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.csproj.CoreCompileInputs.cache
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.AssemblyInfoInputs.cache
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.AssemblyInfo.cs
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.dll
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.pdb
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.RazorAssemblyInfo.cache
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.RazorAssemblyInfo.cs
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.RazorTargetAssemblyInfo.cache
+D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MDM\Code\MDM\MicroServices\VFS.MicroServices.MDM\obj\Debug\netcoreapp2.1\VFS.MicroServices.MDM.csprojAssemblyReference.cache
