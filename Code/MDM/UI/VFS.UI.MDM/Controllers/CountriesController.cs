@@ -11,7 +11,7 @@ namespace VFS.UI.MDM.Controllers
 {
     public class CountriesController : Controller
     {
-        CountryAPI _CountryAPI = new CountryAPI();
+        APIClientHelper _CountryAPI = new APIClientHelper();
 
         public async Task<IActionResult> Index()
         {

@@ -40,7 +40,11 @@ namespace VFS.MicroServices.MDM
                 c.SwaggerDoc("v1", new Info { Title = "MDM Service", Version = "v1" });
             });
             services.AddDbContext<ApplicationContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:EFCoreDB"]));
-            services.AddSingleton(typeof(IDataRepository<Country, int>), typeof(CountryManager));            
+            services.AddSingleton(typeof(IDataRepository<Mission, int>), typeof(MissionManager));
+            services.AddSingleton(typeof(IDataRepository<CountryOfOperation, int>), typeof(CountryOfOperationManager));
+            services.AddSingleton(typeof(IDataRepository<UnitOps, int>), typeof(UnitOpsManager));            
+            services.AddSingleton(typeof(IDataRepository<Country, int>), typeof(CountryManager));
+            services.AddSingleton(typeof(IDataRepository<MstcountryMap, int>), typeof(CountryMapManager));
             services.AddMvc();
             
         }

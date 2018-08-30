@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 
 namespace VFS.UI.MDM
 {
-    public class CountryAPI
+    public class APIClientHelper
     {
         private string _apiBaseURI = "http://localhost:51749";
         public HttpClient InitializeClient()

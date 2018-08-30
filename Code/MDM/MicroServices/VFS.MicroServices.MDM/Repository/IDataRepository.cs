@@ -9,5 +9,6 @@ namespace VFS.MicroServices.MDM.Repository
         int Add(TEntity b);
         int Update(U id, TEntity b);
         int Delete(U id);
+        
     }
 }
