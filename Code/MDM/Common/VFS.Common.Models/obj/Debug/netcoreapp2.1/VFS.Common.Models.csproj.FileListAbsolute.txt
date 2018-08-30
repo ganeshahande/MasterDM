@@ -1,8 +1,0 @@
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\bin\Debug\netcoreapp2.1\VFS.Common.Models.deps.json
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\bin\Debug\netcoreapp2.1\VFS.Common.Models.dll
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\bin\Debug\netcoreapp2.1\VFS.Common.Models.pdb
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\obj\Debug\netcoreapp2.1\VFS.Common.Models.csproj.CoreCompileInputs.cache
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\obj\Debug\netcoreapp2.1\VFS.Common.Models.AssemblyInfoInputs.cache
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\obj\Debug\netcoreapp2.1\VFS.Common.Models.AssemblyInfo.cs
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\obj\Debug\netcoreapp2.1\VFS.Common.Models.dll
-D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\Common\VFS.Common.Models\obj\Debug\netcoreapp2.1\VFS.Common.Models.pdb
