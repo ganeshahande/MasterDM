@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using VFS.Common.Models.Masters;
 
 namespace VFS.MicroServices.MDM.Models
 {

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Linq;
 using Newtonsoft.Json;
-using VFS.UI.MDM.Models;
+using VFS.Common.Models.Masters;
 
 namespace VFS.UI.MDM.Controllers
 {
@@ -15,7 +15,7 @@ namespace VFS.UI.MDM.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<CountryDTO> dto = new List<CountryDTO>();
+            List<Country> dto = new List<Country>();
 
             HttpClient client = _CountryAPI.InitializeClient();
 
@@ -28,7 +28,7 @@ namespace VFS.UI.MDM.Controllers
                 var result = res.Content.ReadAsStringAsync().Result;
 
                 //DESERIALIZING THE RESPONSE RECIEVED FROM WEB API AND STORING INTO THE LIST  
-                dto = JsonConvert.DeserializeObject<List<CountryDTO>>(result);
+                dto = JsonConvert.DeserializeObject<List<Country>>(result);
 
             }
             //RETURNING THE LIST TO VIEW  
@@ -41,20 +41,20 @@ namespace VFS.UI.MDM.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,Code,Isocode2,Isocode3,DialCode,Nationality")] CountryDTO countryDTO)
+        public IActionResult Create([Bind("Id,Name,Code,Isocode2,Isocode3,DialCode,Nationality")] Country country)
         {
             if (ModelState.IsValid)
             {
                 HttpClient client = _CountryAPI.InitializeClient();
 
-                var content = new StringContent(JsonConvert.SerializeObject(countryDTO), Encoding.UTF8, "application/json");
+                var content = new StringContent(JsonConvert.SerializeObject(country), Encoding.UTF8, "application/json");
                 HttpResponseMessage res = client.PostAsync("api/Countries", content).Result;
                 if (res.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index");
                 }
             }
-            return View(countryDTO);
+            return View(country);
         }
 
         public async Task<IActionResult> Edit(long? id)
@@ -64,14 +64,14 @@ namespace VFS.UI.MDM.Controllers
                 return NotFound();
             }
 
-            List<CountryDTO> dto = new List<CountryDTO>();
+            List<Country> dto = new List<Country>();
             HttpClient client = _CountryAPI.InitializeClient();
             HttpResponseMessage res = await client.GetAsync("api/Countries");
 
             if (res.IsSuccessStatusCode)
             {
                 var result = res.Content.ReadAsStringAsync().Result;
-                dto = JsonConvert.DeserializeObject<List<CountryDTO>>(result);
+                dto = JsonConvert.DeserializeObject<List<Country>>(result);
             }
 
             var country = dto.SingleOrDefault(m => m.Id == id);
@@ -82,12 +82,12 @@ namespace VFS.UI.MDM.Controllers
 
             return View(country);
         }
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(long id, [Bind("Id,Name,Code,Isocode2,Isocode3,DialCode,Nationality")] CountryDTO countryDTO)
+        public IActionResult Edit(long id, [Bind("Id,Name,Code,Isocode2,Isocode3,DialCode,Nationality")] Country country)
         {
-            if (id != countryDTO.Id)
+            if (id != country.Id)
             {
                 return NotFound();
             }
@@ -96,14 +96,14 @@ namespace VFS.UI.MDM.Controllers
             {
                 HttpClient client = _CountryAPI.InitializeClient();
 
-                var content = new StringContent(JsonConvert.SerializeObject(countryDTO), Encoding.UTF8, "application/json");
+                var content = new StringContent(JsonConvert.SerializeObject(country), Encoding.UTF8, "application/json");
                 HttpResponseMessage res = client.PutAsync("api/Countries", content).Result;
                 if (res.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index");
                 }
             }
-            return View(countryDTO);
+            return View(country);
         }
 
     }

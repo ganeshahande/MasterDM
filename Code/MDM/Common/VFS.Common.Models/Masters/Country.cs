@@ -1,6 +1,6 @@
-﻿namespace VFS.UI.MDM.Models
+﻿namespace VFS.Common.Models.Masters
 {
-    public class CountryDTO
+    public class Country
     {
         public int Id { get; set; }
         public string Name { get; set; }

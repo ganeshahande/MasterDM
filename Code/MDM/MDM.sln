@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bacpac", "bacpac", "{F04682
 		Database\bacpac\_DBMISSION.bacpac = Database\bacpac\_DBMISSION.bacpac
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C5662762-3744-435C-A82D-9C661F2DE249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VFS.Common.Models", "Common\VFS.Common.Models\VFS.Common.Models.csproj", "{ECC5F0C1-C7AC-4A9D-9A7A-F4755E2E3DE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,10 @@ Global
 		{7BC183A3-5335-4F09-9CBD-F8ED02612C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BC183A3-5335-4F09-9CBD-F8ED02612C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BC183A3-5335-4F09-9CBD-F8ED02612C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC5F0C1-C7AC-4A9D-9A7A-F4755E2E3DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC5F0C1-C7AC-4A9D-9A7A-F4755E2E3DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC5F0C1-C7AC-4A9D-9A7A-F4755E2E3DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC5F0C1-C7AC-4A9D-9A7A-F4755E2E3DE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,7 @@ Global
 		{C5AD878F-5307-4A9F-8B68-B1CA3310F281} = {F4A0EC86-4B69-458A-8DAD-CCE0329332CD}
 		{7BC183A3-5335-4F09-9CBD-F8ED02612C62} = {9894D12B-29C6-4DF4-BC1F-7D114B94AF10}
 		{F04682FD-7BE8-49B6-8527-43746A98C352} = {695D4EE1-8F00-4080-8711-C5BC9E611221}
+		{ECC5F0C1-C7AC-4A9D-9A7A-F4755E2E3DE5} = {C5662762-3744-435C-A82D-9C661F2DE249}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D450EC1A-C32F-4D19-818A-ADF251933A7B}

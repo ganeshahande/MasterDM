@@ -5628,6 +5628,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "VFS.Common.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/VFS.Common.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VFS.Common.Models.dll": {}
+        }
       }
     }
   },
@@ -14445,6 +14455,11 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "VFS.Common.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Common/VFS.Common.Models/VFS.Common.Models.csproj",
+      "msbuildProject": "../../Common/VFS.Common.Models/VFS.Common.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14455,7 +14470,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.3",
-      "Swashbuckle.AspNetCore >= 3.0.0"
+      "Swashbuckle.AspNetCore >= 3.0.0",
+      "VFS.Common.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -14490,7 +14506,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\_OFFICE\\_SVN\\_SCRUM\\_APPLICATION\\_VFS\\MasterDM\\Code\\MDM\\Common\\VFS.Common.Models\\VFS.Common.Models.csproj": {
+              "projectPath": "D:\\_OFFICE\\_SVN\\_SCRUM\\_APPLICATION\\_VFS\\MasterDM\\Code\\MDM\\Common\\VFS.Common.Models\\VFS.Common.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

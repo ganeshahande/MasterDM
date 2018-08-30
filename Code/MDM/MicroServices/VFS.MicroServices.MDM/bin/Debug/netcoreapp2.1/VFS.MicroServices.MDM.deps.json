@@ -30,7 +30,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.3",
-          "Swashbuckle.AspNetCore": "3.0.0"
+          "Swashbuckle.AspNetCore": "3.0.0",
+          "VFS.Common.Models": "1.0.0"
         },
         "runtime": {
           "VFS.MicroServices.MDM.dll": {}
@@ -750,6 +751,14 @@
           "System.Reflection.Extensions": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "VFS.Common.Models/1.0.0": {
+        "runtime": {
+          "VFS.Common.Models.dll": {}
+        },
+        "compile": {
+          "VFS.Common.Models.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4442,6 +4451,11 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+    },
+    "VFS.Common.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Libuv/1.10.0": {
       "type": "package",

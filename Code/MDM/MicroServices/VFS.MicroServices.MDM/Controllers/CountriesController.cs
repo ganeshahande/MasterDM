@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using VFS.MicroServices.MDM.Models;
+using VFS.Common.Models.Masters;
 
 namespace VFS.MicroServices.MDM.Controllers
 {

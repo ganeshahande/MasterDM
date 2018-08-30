@@ -14,17 +14,12 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 1 "D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\Views\_ViewImports.cshtml"
-using VFS.UI.MDM;
-
-#line default
-#line hidden
-#line 2 "D:\_OFFICE\_SVN\_SCRUM\_APPLICATION\_VFS\MasterDM\Code\MDM\UI\VFS.UI.MDM\Views\_ViewImports.cshtml"
-using VFS.UI.MDM.Models;
+using VFS.Common.Models;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"af28ffd7052dac043a0cb34e1edbdb76def9900d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e799b02770f7e3922d2f73b937f1a7357ce3e07c", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

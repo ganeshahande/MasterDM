@@ -1,6 +1,4 @@
-using System;
-
-namespace VFS.UI.MDM.Models
+﻿namespace VFS.Common.Models.Generic
 {
     public class ErrorViewModel
     {

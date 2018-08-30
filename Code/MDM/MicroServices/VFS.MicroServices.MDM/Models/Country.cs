@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace VFS.MicroServices.MDM.Models
 {
-    public partial class Country
+    public partial class Countrys
     {
-        public Country()
+        public Countrys()
         {
             //CountryOfOperation = new HashSet<CountryOfOperation>();
             //MstcountryLangMap = new HashSet<MstcountryLangMap>();
