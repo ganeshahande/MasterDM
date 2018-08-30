@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -38,8 +40,9 @@ namespace VFS.MicroServices.MDM.Manager
         }
         public IEnumerable<MstcountryMap> GetAll()
         {
-            var countryMap = ctx.MstcountryMap.Include(m => m.Country).Include(m => m.CountryOps).Include(m => m.Mission).Include(m => m.UnitOps);
-            return countryMap.ToList();
+            var countryMap = ctx.MstcountryMap.FromSql("dbo.usp_GetCountryMap");
+            //var countryMap = ctx.MstcountryMap.Include(m => m.Country).Include(m => m.CountryOps).Include(m => m.Mission).Include(m => m.UnitOps).Take(1);
+            return countryMap.ToList();           
         }
         public int Add(MstcountryMap countryMap)
         {

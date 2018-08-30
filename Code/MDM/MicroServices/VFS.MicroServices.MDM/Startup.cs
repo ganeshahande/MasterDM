@@ -67,11 +67,14 @@ namespace VFS.MicroServices.MDM
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "MDM Service");
             });
+            ;
+            //app.UseExceptionHandler();
             app.UseMvc();
         }
     }
